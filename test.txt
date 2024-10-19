@@ -1,0 +1,61 @@
+1)creating table
+
+CREATE TABLE books (
+book_id int,
+bookName varchar(20),
+authorName varchar(25), 
+publisherName varchar(20), 
+price int);
+
+
+2)inserting values
+ 
+
+INSERT INTO books(book_id, bookname, authorName, publisherName, price) VALUES
+(1, "Lords of Rings", "Samuel", "Kumar Publishers", 1000),
+(2, "Dance of Dragon", "George", "HBO Publishers", 1500),
+(3, "Song of Ice and Fire", "Samuel", "Kumar Publishers", 1800),
+(4, "Wings of Fire", "Apj", "Apj Publishers", 250),
+(5, "Sumanth Story", "Sumanth", "Kumar Publishers", 50);
+
+
+3) constraints:-
+
+	constraints some set of rules that applied to the columns while declaring
+the columns (or creating the tables). And if for got mention the constraint while 
+creatin the table, we can use alter command to do it. We can declare constraints 
+in 2 ways while create table, one is directly mentioning the constraint after writing
+datatypes. Another way is at the end create table command using 'constraint' and we
+ need give constaint_name and mention constraint  and Put Column name inside the braces . 
+
+There are 5 constraints are there. They are,
+	-NOT NULL
+	-UNIQUE
+	-CHECK
+	-PRIMARY KEY
+	-FORIEGN KEY
+
+NOT NULL:
+---------
+	not null means there should be not null values in that column.
+
+UNIQE:-
+--------
+	Unique means there should not any duplicate values.
+
+check:
+--------
+	check means that mentioning range. the values in this column should be range between the condition.
+
+prImary key:
+------------
+	PRIMARY KEY it is a combnation of both unique and not null. It connot accept any null values and 
+also duplicate values. in a table here is only one primary key is allowed.
+
+Foriegn key:
+------------
+
+FORIEGN key used to connect two tables. child table is connect using primary key column of parent tablels.
+
+
+
